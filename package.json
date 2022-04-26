@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://unkindled11.github.io/goitbootcamp16-team2",
+  "homepage": "https://unkindled11.github.io/goitbootcamp16-team2-deploy",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /goitbootcamp16-team2-deploy/"
