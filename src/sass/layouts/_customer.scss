@@ -1,0 +1,256 @@
+@import '../breakPoints';
+
+.reviews {
+  padding-top: 80px;
+  padding-bottom: 86px;
+}
+
+.reviews-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.swiper {
+  position: relative;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* Center slide text vertically */
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-wrapper {
+  margin-bottom: 15px;
+}
+
+.slider-text-wrapper {
+  padding: 45px 62px 25px 62px;
+  margin-bottom: 5px;
+  background-color: #fafafa;
+  z-index: -1;
+}
+
+.text-decoration {
+  z-index: 1;
+  font-family: DM Sans;
+  font-weight: 500;
+  text-align: center;
+  font-size: 12px;
+
+  line-height: 2.58;
+
+  color: $titleBlackColor;
+
+  background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 31px);
+  margin: 0;
+
+  &::before {
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+
+    content: '';
+    background-image: url(../../src/images/tab/tab-suffix-1x.png);
+    width: 54px;
+    height: 42px;
+
+    left: 67px;
+    top: 130px;
+  }
+}
+
+.text-decoration-name {
+  position: relative;
+  margin: 0 0 47px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.87;
+  &::before {
+    content: '';
+    background-image: url(../../src/images/tab/tab-dots-1x.png);
+    display: inline-block;
+
+    position: absolute;
+    top: -10px;
+    left: 37%;
+    width: 32px;
+    height: 4px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  width: 14px;
+  height: 13px;
+  background-repeat: no-repeat;
+  background-image: url(../../src/images/pc/home.png);
+  background-color: #fff;
+}
+
+// ----------480px----------
+
+@media screen and (min-width: 480px) {
+  .reviews-wrapper {
+    width: 480px;
+    margin: 0 auto;
+  }
+
+  .swiper-slide {
+    width: 280px;
+  }
+
+  .slider-text-wrapper {
+    padding: 44px 50px 16px 50px;
+  }
+
+  .text-decoration {
+    z-index: 1;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 2.14;
+    &::before {
+      display: inline-block;
+      position: absolute;
+
+      content: '';
+      background-image: url(../../src/images/tab/tab-suffix-1x.png);
+      width: 54px;
+      height: 42px;
+      z-index: -1;
+      left: 67px;
+      top: 130px;
+    }
+  }
+}
+
+.swiper-button-prev::after {
+  color: #d31342;
+  font-size: 25px;
+}
+
+.swiper-button-next::after {
+  color: #d31342;
+  font-size: 25px;
+}
+
+// ----------768px----------
+
+@media screen and (min-width: 768px) {
+  .reviews {
+    padding-top: 121px;
+    padding-bottom: 119px;
+  }
+
+  .reviews-wrapper {
+    width: 768px;
+    margin: 0 auto;
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+  .swiper-slide {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .slider-text-wrapper {
+    padding: 47px 80px 34px 80px;
+    height: 164px;
+  }
+
+  .text-decoration {
+    width: 100%;
+    font-size: 14px;
+    line-height: 2.14;
+    padding-right: 20px;
+    &::before {
+      display: inline-block;
+      position: absolute;
+
+      content: '';
+      background-image: url(../../src/images/tab/tab-suffix-1x.png);
+      width: 54px;
+      height: 42px;
+      z-index: -1;
+      left: 67px;
+      top: 130px;
+    }
+  }
+  .text-decoration-name {
+    font-size: 16px;
+  }
+}
+
+// ----------1200px----------
+
+@media screen and (min-width: 1280px) {
+  .reviews {
+    padding-top: 123px;
+    padding-bottom: 132px;
+  }
+  .reviews-wrapper {
+    width: 1280px;
+    margin: 0 auto;
+    padding-left: 177px;
+    padding-right: 177px;
+  }
+  .swiper-slide {
+    width: 926px;
+    margin: 0 auto;
+  }
+
+  .slider-text-wrapper {
+    padding: 32px 52px 32px 52px;
+    height: 164px;
+  }
+
+  .text-decoration {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.87;
+    padding-right: 27px;
+    padding-left: 27px;
+
+    &::before {
+      display: inline-block;
+      position: absolute;
+
+      content: '';
+      background-image: url(../../src/images/tab/tab-suffix-1x.png);
+      width: 54px;
+      height: 42px;
+      left: 40px;
+      top: 115px;
+    }
+  }
+
+  .text-decoration-name {
+    font-size: 20px;
+  }
+}
+
+// @media screen and (max-width: 1279px) {
+//   .text-decoration-name {
+//   }
+// }
